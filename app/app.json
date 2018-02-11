@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/rules/rules",
+    "pages/standard/standard",
+    "pages/feedback/feedback",
+    "pages/check/check",
+    "pages/index/index",
+    "pages/sign/sign",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,202 @@
+/* pages/login/login.wxss */
+
+.triangle1 {
+    position: absolute;
+    left: 60rpx;
+    top: 90rpx;
+    opacity: 0.32;
+    border-bottom: 37rpx solid #2b59cf;
+    border-left: 14rpx solid transparent;
+    border-right: 100rpx solid transparent;
+    transform: rotate(315deg);
+    /* animation: anim1 2s infinite alternate; */
+}
+
+/* 
+@keyframes anim1 {
+    0% {
+
+    }
+
+    100% {
+        left: 70rpx;
+        top: 80rpx;
+    }
+} */
+
+.triangle2 {
+    position: absolute;
+    border-top: 58rpx solid #42b0ff;
+    border-right: 46rpx solid transparent;
+    left: 502rpx;
+    top: 40rpx;
+    opacity: 0.67;
+    /* animation: anim2 2s infinite alternate; */
+}
+
+/* @keyframes anim2 {
+    0% {
+
+    }
+
+    100% {
+        left: 522rpx;
+        top: 60rpx;
+    }
+} */
+
+.triangle3 {
+    position: absolute;
+    border-bottom: 70rpx solid #29aaf2;
+    border-left: 45rpx solid transparent;
+    border-right: 25rpx solid transparent;
+    left: 10rpx;
+    top: 380rpx;
+    opacity: 0.58;
+    transform: rotate(12deg);
+    /* animation: anim3 2s infinite alternate; */
+}
+
+/* @keyframes anim3 {
+    0% {
+
+    }
+
+    100% {
+        left: 10rpx;
+        top: 400rpx;
+    }
+} */
+
+.triangle4 {
+    position: absolute;
+    border-bottom: 152rpx solid #2b59cf;
+    border-left: 22rpx solid transparent;
+    border-right: 22rpx solid transparent;
+    left: 704rpx;
+    top: 526rpx;
+    opacity: 0.4;
+    /* animation: anim4 2s infinite alternate; */
+}
+
+/* @keyframes anim4 {
+    0% {
+
+    }
+
+    100% {
+        left: 704rpx;
+        top: 466rpx;
+    }
+} */
+
+.triangle5 {
+    position: absolute;
+    border-top: 80rpx solid #29aaf2;
+    border-right: 80rpx solid transparent;
+    left: 96rpx;
+    top: 1078rpx;
+    opacity: 0.54;
+    /* animation: anim5 2s infinite alternate; */
+}
+
+/* @keyframes anim5 {
+    0% {
+    }
+
+    100% {
+        transform: rotate(37deg);
+    }
+} */
+
+.triangle6 {
+    position: absolute;
+    border-bottom: 40rpx solid #42b0ff;
+    border-left: 100rpx solid transparent;
+    border-right: 18rpx solid transparent;
+    left: 432rpx;
+    top: 1085rpx;
+    opacity: 0.65;
+    transform: rotate(245deg);
+    /* animation: anim6 2s infinite alternate; */
+}
+
+/* @keyframes anim6 {
+    0% {
+    }
+
+    100% {
+        transform: rotate(235deg);
+    }
+} */
+
+text {
+    margin-top: 61rpx;
+    color: #101010;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.content {
+    width: 510rpx;
+    height: 797rpx;
+    border-radius: 18rpx;
+    text-align: center;
+    margin-top: 85rpx;
+    box-shadow: 0rpx 0rpx 36rpx 0rpx rgba(170, 170, 170, 1);
+    border: 2rpx solid rgba(187, 187, 187, 1);
+}
+
+.user-avatar {
+    width: 162rpx;
+    height: 162rpx;
+    margin-top: 113rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-id {
+    width: 374rpx;
+    height: 83rpx;
+    line-height: 83rpx;
+    margin: 52rpx auto;
+    margin-bottom: 18rpx;
+    text-align: left;
+    font-size: 28rpx;
+    opacity: 0.5;
+    border-radius: 36rpx;
+    border: 2rpx solid rgba(187, 187, 187, 1);
+    padding-left: 54rpx;
+}
+
+.password {
+    width: 374rpx;
+    height: 83rpx;
+    line-height: 83rpx;
+    margin: 18rpx auto;
+    margin-bottom: 97rpx;
+    text-align: left;
+    font-size: 28rpx;
+    opacity: 0.5;
+    border-radius: 36rpx;
+    border: 2rpx solid rgba(187, 187, 187, 1);
+    padding-left: 54rpx;
+}
+
+.login {
+    width: 374rpx;
+    height: 83rpx;
+    border-radius: 36rpx;
+    background-color: #333643;
+    margin-top: 88rpx;
+    margin: 88rpx auto;
+    text-align: center;
+    line-height: 83rpx;
+    font-size: 36rpx;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.login-hover {
+    color: rgba(122, 122, 122, 0.8);
+}

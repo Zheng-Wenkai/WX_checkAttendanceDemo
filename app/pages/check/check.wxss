@@ -1,0 +1,109 @@
+/* pages/check/check.wxss */
+
+.content {
+  margin-top: 124rpx;
+  margin-bottom: 30rpx;
+  width: 504rpx;
+  height: 54rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-template {
+  display: flex;
+  flex-direction: column;
+  width: 504rpx;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  margin-top: 18rpx;
+  margin-bottom: 18rpx;
+  color: #101010;
+  font-size: 25rpx;
+  font-family: Arial;
+  line-height: 54rpx;
+}
+
+.present-number {
+  margin-top: -15rpx;
+  border-bottom: 2rpx solid darkblue;
+  width: 80rpx;
+}
+
+.text-30 {
+  font-size: 30rpx;
+  line-height: 54rpx;
+  margin-bottom: 10rpx;
+}
+
+text {
+  color: #101010;
+  font-size: 25rpx;
+  font-family: Arial;
+  line-height: 54rpx;
+}
+
+.Team-name-input {
+  width: 360rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  opacity: 0.5;
+  border-radius: 9rpx;
+  color: black;
+  font-size: 25rpx;
+  font-family: Arial;
+  border: 2rpx solid #bbb;
+  margin-left: 18rpx;
+}
+
+.btn1 {
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background-color: #3d393d;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-family: Microsoft Yahei;
+  border: 2rpx solid #fff;
+  margin-right: 120rpx;
+}
+
+.btn2 {
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background-color: #3d393d;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-family: Microsoft Yahei;
+  border: 2rpx solid #fff;
+}
+
+.content-button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 74rpx;
+  margin-bottom: 200rpx;
+}
+
+.btn1-hover {
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.btn2-hover {
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.help {
+  position: absolute;
+  right: 40rpx;
+  top: 5rpx;
+  font-size: 28rpx;
+  color: rgba(16, 16, 16, 1);
+}

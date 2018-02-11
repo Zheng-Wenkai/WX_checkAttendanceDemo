@@ -1,0 +1,73 @@
+<!--考勤标准-->
+<scroll-view style="height:1600rpx">
+
+<text decode="true"> &nbsp;&nbsp;&nbsp;满分：10分
+       &nbsp;&nbsp;&nbsp;打分标准：客观、公正、实事求是
+       &nbsp;&nbsp;&nbsp;以提高卫生质量为目的，团队立即整改酌情处理
+</text>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text decode="true">地面
+       &nbsp;&nbsp;&nbsp;①有纸屑、包装等垃圾
+       &nbsp;&nbsp;&nbsp;（1片-0.5分，2至3片-1分，3片以上-2分）
+       &nbsp;&nbsp;&nbsp;②有污渍（-1分）
+</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text decode="true">桌面
+       &nbsp;&nbsp;&nbsp;①有纸屑、包装等垃圾未及时清理
+       &nbsp;&nbsp;&nbsp;（1片-0.5分，2至3片-1分，3片以上-2分）
+       &nbsp;&nbsp;&nbsp;②物品摆放杂乱（-1分）
+</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>椅子及其他设施摆放杂乱（-1分）</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>若发现有团队物品放置在公共区域（如：讨论桌、无人使用的办公桌、过道等），在创客空间内，大声喧哗（-2分）</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>对考勤人员态度恶劣（-2分）</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>对卫生问题不重视，态度敷衍（-1分）</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>若发现团队有抽烟的情况，拍照并上报部长团，由部长团处理</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/finger.png" class="finger"></image></view>
+<text>Ps.由考勤人员每周统计各公司的到勤人员情况，并对出勤率低的公司进行相应的调整。</text>
+</view>
+
+</scroll-view>

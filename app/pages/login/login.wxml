@@ -1,0 +1,18 @@
+<!-- 登录 -->
+<view class="container">
+    <text>登录</text>
+    <view class='content'>
+        <image class="user-avatar" src="/image/login.jpg"></image>
+        <input placeholder="账户" class='user-id' bindinput='getUsername' />
+        <input placeholder="密码" class='password' bindinput='getPassword' password='true' />
+        <button class='login' bindtap='loginClick' hover-class='login-hover'>登录</button>
+    </view>
+
+    <view class='triangle1'></view>
+    <view class='triangle2'></view>
+    <view class='triangle3'></view>
+    <view class='triangle4'></view>
+    <view class='triangle5'></view>
+    <view class='triangle6'></view>
+
+</view>

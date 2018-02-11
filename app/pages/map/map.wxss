@@ -1,0 +1,9 @@
+/* pages/map/map.wxss */
+
+image {
+    width: 600rpx;
+    height: 1050rpx;
+    margin: 75rpx;
+    border-radius: 20rpx;
+    box-shadow: 0px 0px 12rpx 0px #19171a;
+}

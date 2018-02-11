@@ -1,0 +1,54 @@
+/* pages/feedback/feedback.wxss */
+
+.top {
+  margin-top: 0rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  font-size:30rpx;
+  color: #666;
+  margin-top: 50rpx;
+}
+
+input {
+  width: 427rpx;
+  height: 61rpx;
+  line-height: 61rpx;
+  border-radius: 18rpx;
+  color: rgba(16, 16, 16, 1);
+  border: 2rpx solid rgba(187, 187, 187, 0.5);
+  margin-left: 30rpx;
+}
+
+.text {
+  font-size: 32rpx;
+  line-height: 61rpx;
+}
+
+textarea {
+  width: 432rpx;
+  height: 180rpx;
+  line-height: 30rpx;
+  border-radius: 9rpx;
+  text-align: left;
+  border: 2rpx solid rgba(187, 187, 187, 1);
+  margin-left: 48rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+button {
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background-color: rgba(61, 57, 61, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 28rpx;
+  box-shadow: 0px 0px 20rpx 0px rgba(25, 23, 26, 1);
+  font-family: Microsoft Yahei;
+  border: 2rpx solid rgba(255, 255, 255, 1);
+  line-height: 60rpx;
+  margin-top: 108rpx;
+}

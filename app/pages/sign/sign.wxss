@@ -1,0 +1,217 @@
+/* pages/sign/sign.wxss */
+
+.triangle1 {
+    position: absolute;
+    border-bottom: 50rpx solid #2b59cf;
+    border-left: 17rpx solid transparent;
+    border-right: 115rpx solid transparent;
+    transform: rotate(300deg);
+    /* animation: anim1 2s infinite alternate; */
+    left: 92rpx;
+    top: 110rpx;
+    opacity: 0.32;
+}
+
+/* @keyframes anim1 {
+    0% {
+    }
+
+    100% {
+        left: 102rpx;
+        top: 120rpx;
+        border-bottom: 35rpx solid #2b59cf;
+        border-left: 12rpx solid transparent;
+        border-right: 81rpx solid transparent;
+    }
+} */
+
+.triangle2 {
+    position: absolute;
+    border-top: 68rpx solid #42b0ff;
+    border-right: 56rpx solid transparent;
+    /* animation: anim2 4s infinite alternate; */
+    left: 660rpx;
+    top: 20rpx;
+    opacity: 0.67;
+}
+
+/* @keyframes anim2 {
+    0% {
+    }
+
+    50% {
+        left: 620rpx;
+        top: 20rpx;
+    }
+
+    95% {
+        left: 620rpx;
+        top: 20rpx;
+        transform: rotate(25deg);
+    }
+
+    100% {
+        left: 620rpx;
+        top: 20rpx;
+        transform: rotate(25deg);
+        border-top: 54rpx solid #42b0ff;
+        border-right: 49rpx solid transparent;
+    }
+} */
+
+.triangle3 {
+    position: absolute;
+    border-bottom: 78rpx solid #29aaf2;
+    border-left: 49rpx solid transparent;
+    border-right: 29rpx solid transparent;
+    transform: rotate(265deg);
+    /* animation: anim3 2s infinite alternate; */
+    left: 50rpx;
+    top: 480rpx;
+    opacity: 0.58;
+}
+
+/* @keyframes anim3 {
+    0% {
+    }
+
+    90% {
+        left: 50rpx;
+        top: 440rpx;
+        border-bottom: 64rpx solid #29aaf2;
+        border-left: 39rpx solid transparent;
+        border-right: 23rpx solid transparent;
+    }
+
+    100% {
+        left: 50rpx;
+        top: 440rpx;
+        border-bottom: 78rpx solid #29aaf2;
+        border-left: 49rpx solid transparent;
+        border-right: 29rpx solid transparent;
+    }
+} */
+
+.triangle4 {
+    position: absolute;
+    border-bottom: 152rpx solid #2b59cf;
+    border-left: 22rpx solid transparent;
+    border-right: 22rpx solid transparent;
+    /* animation: anim4 2s infinite alternate; */
+    left: 558rpx;
+    top: 540rpx;
+    opacity: 0.4;
+    transform: rotate(27deg);
+}
+
+/* @keyframes anim4 {
+    0% {
+    }
+
+    100% {
+        transform: rotate(57deg);
+    }
+} */
+
+.triangle5 {
+    position: absolute;
+    border-top: 80rpx solid #42b0ff;
+    border-right: 80rpx solid transparent;
+    /* animation: anim5 2s infinite alternate; */
+    left: 52rpx;
+    top: 851rpx;
+    opacity: 0.54;
+    transform: rotate(341deg);
+}
+
+/* @keyframes anim5 {
+    0% {
+    }
+
+    50% {
+    transform: rotate(311deg);
+    }
+
+    100%{
+            transform: rotate(311deg);
+    left: 80rpx;
+    top: 820rpx;
+    }
+}  */
+
+.content1 {
+    margin-top: 310rpx;
+    margin-bottom: 48rpx;
+    width: 504rpx;
+    height: 54rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.content2 {
+    margin-bottom: 76rpx;
+    width: 504rpx;
+    height: 54rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+text {
+    line-height: 54rpx;
+    color: #101010;
+    font-size: 28rpx;
+    text-align: center;
+    font-family: Arial;
+}
+
+.signer1 {
+    width: 340rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    opacity: 0.5;
+    border-radius: 9rpx;
+    color: black;
+    font-size: 28rpx;
+    font-family: Arial;
+    border: 2rpx solid #bbb;
+    margin: 0 auto;
+    margin-left: 20rpx;
+}
+
+.signer2 {
+    width: 340rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    opacity: 0.5;
+    border-radius: 9rpx;
+    color: black;
+    font-size: 28rpx;
+    font-family: Arial;
+    border: 2rpx solid #bbb;
+    margin: 0 auto;
+    margin-left: 20rpx;
+}
+
+.btn {
+    width: 144rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    border-radius: 8rpx;
+    background-color: #3d393d;
+    color: #fff;
+    font-size: 28rpx;
+    text-align: center;
+    box-shadow: 0px 0px 8rpx 0px #000;
+    font-family: Microsoft Yahei;
+    border: 2rpx solid #fff;
+}
+
+.btn-hover {
+    color: rgba(128, 128, 128, 0.8);
+}
+
+.img-keke {
+    margin-top: 65rpx;
+    width: 450rpx;
+    height: 540rpx;
+}

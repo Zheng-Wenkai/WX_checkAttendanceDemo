@@ -1,0 +1,67 @@
+<!--人员制度-->
+
+<scroll-view style="height:1400rpx">
+
+<view class="table" style="margin-top: 20rpx">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>当天考勤的人员需提前十分钟到场准备</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>先快速过一遍，拖拉和有疑惑的团队先跳过，第二次考勤留意未考勤的团队，对个别团队进行提醒</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>规定考勤的路线
+线路：原路线不变 </text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>第二次考勤要留意是否有团队回来了</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>考勤时间：早上10:00~10:30（第一次20分钟，主要是仔细地检查卫生以及登记考勤人数；第二次10分钟，主要是看看缺席的团队有没有到位以及原来到位的团队是否有人离开）</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>请假的团队要记录，请假几天的团队可以直接几天的都记录</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>选出考勤周组长（每周周六前组内推选下一周的考勤周组长，并与部长汇报），上公邮确认请假信息，通知考勤人员，备注好请假团队</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>每两周从小程序后台导出考勤情况，每两周的考勤周组长共同汇总，并在周四例会上做总结</text>
+</view>
+
+<view class="line"></view>
+
+<view class="table">
+<view><image src="/image/star.png" class="xingxing"></image></view>
+<text>分工：一人用手机打开微信小程序扣分，一人检查卫生并提醒团队</text>
+</view>
+
+</scroll-view>

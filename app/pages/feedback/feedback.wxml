@@ -1,0 +1,23 @@
+<!-- 长期反馈 -->
+<view class="container top">
+
+    <view class='content'>
+        <text class='text'>团队名称</text>
+        <input class='input' bindinput='getTeam' />
+    </view>
+
+    <view class='content top1'>
+        <text>建议1：</text>
+        <textarea bindinput='getAdvice1' />
+    </view>
+    <view class='content'>
+        <text>建议2：</text>
+        <textarea bindinput='getAdvice2' />
+    </view>
+    <view class='content'>
+        <text>建议3：</text>
+        <textarea bindinput='getAdvice3' />
+    </view>
+    
+    <button bindtap='fHandin'> 提交 </button>
+</view>

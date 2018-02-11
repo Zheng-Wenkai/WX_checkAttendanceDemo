@@ -1,0 +1,20 @@
+<!-- 考勤人员签到 -->
+<view class="container">
+    <view class='content1'>
+        <text>考勤人员1</text>
+        <input placeholder="" class='signer1' bindinput='getPerson1' />
+    </view>
+    <view class='content2'>
+        <text>考勤人员2</text>
+        <input placeholder="" class='signer2' bindinput='getPerson2' />
+    </view>
+    <button class='btn' bindtap='sHandin' hover-class='btn-hover'> 签到 </button>
+    <image class='img-keke' src='/image/sign.png'></image>
+
+    <view class='triangle1'></view>
+    <view class='triangle2'></view>
+    <view class='triangle3'></view>
+    <view class='triangle4'></view>
+    <view class='triangle5'></view>
+
+</view>

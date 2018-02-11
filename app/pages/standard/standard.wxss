@@ -1,0 +1,47 @@
+/* pages/standard/standard.wxss */
+
+/* pages/rules/rules.wxss */
+
+.table{
+  width: 667rpx;
+  flex-direction: row;
+  display: flex;
+  width: 667rpx;
+  align-items: baseline
+}
+
+text{
+  font-size: 28rpx;
+  font-weight: 350;
+  position: relative;
+  left: 30rpx;
+  line-height: 50rpx;
+  top: 20rpx;
+  word-break: break-all;
+}
+
+.line{
+  background-color:gray;
+  width:738rpx;
+  height:2rpx;
+  left: 14rpx;
+  position: relative;
+  top: 10rpx;
+  margin-top: 30rpx;
+}
+
+.xingxing{
+  width : 52rpx;
+  height: 52rpx;
+  position: relative;
+  left: 24rpx;
+  top: 30rpx;
+  }
+
+.finger{
+  width : 70rpx;
+  height: 60rpx;
+  position: relative;
+  left: 24rpx;
+  top: 52rpx;
+  }

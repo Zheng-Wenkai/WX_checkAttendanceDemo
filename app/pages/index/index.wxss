@@ -1,0 +1,30 @@
+image {
+    width: 600rpx;
+    height: 230rpx;
+    border-radius: 18rpx;
+}
+
+text {
+    position: relative;
+    left: 52rpx;
+    bottom: 200rpx;
+    color: #ffffff;
+    font-size: 36rpx;
+    text-align: center;
+    text-shadow: 0 0 14rpx #000000;
+    font-weight: bold;
+}
+
+.sign {
+    width: 600rpx;
+    height: 230rpx;
+    margin-top: 18rpx;
+    margin-bottom: 32rpx;
+}
+
+.sign-bottom{
+    width: 600rpx;
+    height: 230rpx;
+    margin-top: 18rpx;
+    margin-bottom: 28rpx;
+}

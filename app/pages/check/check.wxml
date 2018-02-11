@@ -1,0 +1,152 @@
+<!-- 团队考勤 -->
+<!-- <input placeholder="团队名称" class='input' bindinput='getTeam' />
+<view>① 考勤人员</view>
+<radio-group bindchange="radioChange_1">
+  <label wx:for="{{items_1}}" wx:key="{{item.value}}">
+    <radio value="{{item.value}}" checked="true" />
+    <view>{{item.name}}</view>
+  </label>
+</radio-group>
+<view>②地面有纸屑、包装等垃圾</view>
+<checkbox-group bindchange="checkboxChange_2">
+  <label wx:for="{{items_2}}" wx:key="{{item.value}}">
+    <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+    <view>{{item.name}}</view>
+  </label>
+</checkbox-group>
+<button type="primary" bindtap='cHandin'> 提交 </button> -->
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='container'>
+        <text class='help' hover-class='help-hover' bindtap='getHelp'>帮助</text>
+        <view class='content'>
+            <text class='text-30'>团队名称</text>
+            <input class='Team-name-input' name="team_name" />
+        </view>
+
+        <view class='content-template'>
+            <text class='text-30'>考勤人员</text>
+            <radio-group class='radio-group' name="team_state" color='red'>
+                <view class='content-radio'>
+                    <label>
+                        <radio value="到场" /> 到场人数：
+                        <input class='present-number' name="present_num" /> 人
+                    </label>
+                    <label>
+                        <radio value="请假" /> 请假
+                    </label>
+                    <label>
+                        <radio value="缺勤" />缺勤
+                    </label>
+                </view>
+            </radio-group>
+        </view>
+
+
+        <view class='content-template'>
+            <text class='text-30'>①地面是否有纸屑、包装等垃圾</text>
+            <radio-group name="rule_1">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="0.5" />-0.5分（有1片）</label>
+                <label>
+                    <radio value="1" />-1分（有2~3片）</label>
+                <label>
+                    <radio value="2" />-2分（3片以上）</label>
+            </radio-group>
+        </view>
+
+        <view class='content-template'>
+            <text class='text-30'>②地面是否有污渍</text>
+            <radio-group name="rule_2">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="1" />有污渍（－1分）</label>
+            </radio-group>
+        </view>
+
+        <view class='content-template'>
+            <text class='text-30'>③桌面是否有纸屑、包装等垃圾</text>
+            <radio-group name="rule_3">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="0.5" />-0.5分（有1片）</label>
+                <label>
+                    <radio value="1" />-1分（有2~3片）</label>
+                <label>
+                    <radio value="2" />-2分（3片以上）</label>
+            </radio-group>
+        </view>
+        <view class='content-template'>
+            <text class='text-30'>④桌面物品是否摆放杂乱</text>
+            <radio-group name="rule_4">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="1" />扣分（－1分）</label>
+            </radio-group>
+        </view>
+
+        <view class='content-template'>
+            <text class='text-30'>⑤椅子及其他设施是否摆放杂乱</text>
+            <radio-group name="rule_5">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="1" />扣分（－1分）</label>
+            </radio-group>
+        </view>
+
+        <view class='content-template'>
+            <text class='text-30'>⑥是否有团队物品放置在公共区域</text>
+            <radio-group name="rule_6">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="2" />扣分（－2分）</label>
+            </radio-group>
+        </view>
+
+        <view class='content-template'>
+            <text class='text-30'>⑦是否在创客空间内大声喧哗</text>
+            <radio-group name="rule_7">
+                <label>
+                    <radio value="0" />不扣分</label>
+                <label>
+                    <radio value="2" />扣分（－2分）</label>
+            </radio-group>
+        </view>
+
+
+        <view class='content-template'>
+        <text class='text-30'>⑧是否对卫生问题不重视，态度敷衍</text>
+        <radio-group name="rule_8">
+            <label>
+                <radio value="0" />不扣分</label>
+            <label>
+                <radio value="2" />扣分（－2分）</label>
+        </radio-group>
+        </view>
+
+
+        <view class='content-template'>
+        <text class='text-30'>⑨是否对考勤人员态度恶劣</text>
+        <radio-group name="rule_9">
+            <label>
+                <radio value="0" />不扣分</label>
+            <label>
+                <radio value="2" />扣分（－2分）</label>
+        </radio-group>
+        </view>
+        
+        <view class='content-button'>
+        <button class='btn1' formType="submit" hover-class='btn1-hover'>提交</button>
+        <button class='btn2' formType="reset" hover-class='btn2-hover'>重置</button>
+        </view>
+
+    </view>
+</form>
