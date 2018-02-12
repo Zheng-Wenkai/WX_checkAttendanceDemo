@@ -20,13 +20,14 @@
 
 # UI设计
 
+### 登录页：
+
+![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/login.png)
+
 ### 首页：
 
 ![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/index.png)
 
-### 登录页：
-
-![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/login.png)
 
 ### 签到页：
 
@@ -44,10 +45,11 @@
 
 ![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/rules.png)
 
-### 长期反馈：
-
-![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/feedback.png)
-
 ### 考勤标准：
 
 ![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/standrd.png)
+
+
+### 长期反馈：
+
+![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/feedback.png)
