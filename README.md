@@ -14,7 +14,10 @@
 
 使用koa框架和knex框架从而适应微信提供的wafer1（https://github.com/tencentyun/wafer）和wafer2（https://github.com/tencentyun/wafer2-quickstart）解决方案
 
-附加说明：由于地图页中涉及隐私问题，故demo中将图片替换为中国地图。用户可根据自己的需要，替换掉app/image/map.png
+附加说明：
+
+1、由于地图页中涉及隐私问题，故demo中将图片替换为中国地图。用户可根据自己的需要，替换掉app/image/map.png
+2、后端部署在本地，用户无需将其部署在服务器中，仅需打开server文件夹，并启动其中的app.js，地址即为app文件夹中的http://localhost:7010/
 
 # 需求分析
 
