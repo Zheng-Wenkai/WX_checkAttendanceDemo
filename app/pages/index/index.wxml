@@ -16,8 +16,12 @@
         <image src="/image/index4.jpg" bindtap='turnToRules'></image>
         <text>人员制度</text>
     </view>
-    <view class='sign-bottom'>
+    <view class='sign'>
         <image src="/image/index5.jpg" bindtap='turnToFeedback'></image>
         <text>长期反馈</text>
+    </view>
+    <view class='sign'>
+        <image src="/image/index6.jpg" bindtap='turnToRecords'></image>
+        <text>历史记录</text>
     </view>
 </view>

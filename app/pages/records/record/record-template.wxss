@@ -1,0 +1,29 @@
+.record-container {
+    display: flex;
+    flex-direction: column;
+    width: 206rpx;
+    padding: 22rpx;
+}
+
+.record-content1 {
+    border: 1rpx solid #f6f6f6;
+    padding: 5rpx;
+    box-shadow: 2rpx 5rpx 5px #888;
+}
+
+.record-content {
+    height: 270rpx;
+    background-color: #fafafa;
+}
+
+.record-name {
+    display: block;
+    text-align: center;
+    line-height: 50rpx;
+}
+
+.record-date {
+    display: block;
+    text-align: center;
+    line-height: 50rpx;
+}

@@ -1,0 +1,6 @@
+<import src='record/record-template.wxml' />
+<view class='container1'>
+    <black wx:for='{{records_key}}' wx:key ='{{*this}}'>
+        <template is='recordTemplate' data='{{...item}}' />
+    </black>
+</view>

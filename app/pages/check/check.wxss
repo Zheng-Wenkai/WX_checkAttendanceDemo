@@ -45,17 +45,14 @@ text {
   line-height: 54rpx;
 }
 
-.Team-name-input {
-  width: 360rpx;
+.Team-name {
+  width: 330rpx;
   height: 54rpx;
-  line-height: 54rpx;
-  opacity: 0.5;
-  border-radius: 9rpx;
-  color: black;
-  font-size: 25rpx;
-  font-family: Arial;
-  border: 2rpx solid #bbb;
-  margin-left: 18rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin-left: 0rpx;
+  text-align: center;
+  border-bottom: 2rpx solid black;
 }
 
 .btn1 {
