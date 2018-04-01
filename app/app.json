@@ -1,18 +1,14 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/records/record-details",
         "pages/check/check",
-        
-        "pages/records/records",
         "pages/map/map",
         "pages/login/login",
         "pages/rules/rules",
         "pages/standard/standard",
         "pages/feedback/feedback",
-        
-        
         "pages/sign/sign"
-        
     ],
     "window": {
         "backgroundTextStyle": "light",

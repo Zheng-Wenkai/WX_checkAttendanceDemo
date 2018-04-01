@@ -1,0 +1,12 @@
+<import src='record-details-template/record-details-template.wxml' />
+<view class='search'>
+    <icon type='search' size='13' color='#405f80' />
+    <input type='text' placeholder='2018/3/20' placeholder-class='placeholder' bindfocus='onBindFoucs' bindconfirm='onBindconfirm'></input>
+    <icon wx:if="{{searchPanelShow}}" type='clear' size='15' bindtap='onCancelImgTap' />
+</view>
+
+<view class='container' wx:if="{{searchPanelShow}}">
+    <block wx:for="{{records_key}}" wx:key="{{*this}}">
+        <template is='record-details-template' data="{{...item}}" />
+    </block>
+</view>

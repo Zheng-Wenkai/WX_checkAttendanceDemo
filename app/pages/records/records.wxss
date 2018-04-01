@@ -1,7 +1,0 @@
-@import 'record/record-template.wxss';
-
-.container1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-}

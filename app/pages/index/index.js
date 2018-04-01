@@ -10,9 +10,15 @@ Page({
       util.showMessage('请从团队地图页面进入');
   },
   turnToMap: function () {
-    wx.navigateTo({
-      url: '../map/map',
-    })
+      if (app.globalData.person_one != null || app.globalData.person_two != null) {
+          wx.navigateTo({
+              url: '../map/map',
+          })
+      }
+      else {
+          util.showMessage('请先进行签到');
+      }
+    
   },
   turnToRules: function () {
     wx.navigateTo({
@@ -32,7 +38,7 @@ Page({
   turnToRecords: function () {
       if (app.globalData.person_one != null || app.globalData.person_two != null) {
           wx.navigateTo({
-              url: '../records/record',
+              url: '../records/record-details',
           })
       }
       else {

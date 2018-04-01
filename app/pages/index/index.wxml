@@ -4,10 +4,10 @@
         <image src="/image/index1.jpg" bindtap='turnToSign'></image>
         <text>考勤人员签到</text>
     </view>
-    <view class='sign'>
+    <!-- <view class='sign'>
         <image src="/image/index2.jpg" bindtap='turnToCheck'></image>
         <text>团队考勤</text>
-    </view>
+    </view> -->
     <view class='sign'>
         <image src="/image/index3.jpg" bindtap='turnToMap'></image>
         <text>团队地图</text>
