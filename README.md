@@ -12,11 +12,7 @@
 
 初始账户：admin，初始密码：admin
 
-使用koa框架和knex框架从而可适应微信提供的小程序解决方案
-
-1、wafer1（https://github.com/tencentyun/wafer）
-
-2、wafer2（https://github.com/tencentyun/wafer2-quickstart）
+使用koa框架和knex框架从而适应微信提供的wafer1（https://github.com/tencentyun/wafer）和wafer2（https://github.com/tencentyun/wafer2-quickstart）解决方案
 
 附加说明：
 

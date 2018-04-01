@@ -119,7 +119,7 @@ Page({
     else{
       util.showBusy('正在提交');
       wx.request({
-        url: 'http://127.0.0.1:5757/sinsert',
+        url: 'https://www.justforlearn.cn/sinsert',
         data: {
           person_one: app.globalData.person_one,
           person_two: app.globalData.person_two,
