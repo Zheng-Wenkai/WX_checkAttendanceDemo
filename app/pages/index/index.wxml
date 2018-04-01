@@ -4,10 +4,10 @@
         <image src="/image/index1.jpg" bindtap='turnToSign'></image>
         <text>考勤人员签到</text>
     </view>
-    <!-- <view class='sign'>
+    <view class='sign'>
         <image src="/image/index2.jpg" bindtap='turnToCheck'></image>
         <text>团队考勤</text>
-    </view> -->
+    </view>
     <view class='sign'>
         <image src="/image/index3.jpg" bindtap='turnToMap'></image>
         <text>团队地图</text>
@@ -16,12 +16,8 @@
         <image src="/image/index4.jpg" bindtap='turnToRules'></image>
         <text>人员制度</text>
     </view>
-    <view class='sign'>
+    <view class='sign-bottom'>
         <image src="/image/index5.jpg" bindtap='turnToFeedback'></image>
         <text>长期反馈</text>
-    </view>
-    <view class='sign'>
-        <image src="/image/index6.jpg" bindtap='turnToRecords'></image>
-        <text>历史记录</text>
     </view>
 </view>

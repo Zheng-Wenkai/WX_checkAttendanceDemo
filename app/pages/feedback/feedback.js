@@ -68,7 +68,7 @@ Page({
   fHandin: function () {
     var that = this;
     wx.request({
-      url: 'https://www.justforlearn.cn/finsert',
+      url: 'http://127.0.0.1:5757/finsert',
       data: {
         team_name: that.data.team_name,
         advice1: that.data.advice1,
