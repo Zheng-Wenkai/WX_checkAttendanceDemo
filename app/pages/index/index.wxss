@@ -22,9 +22,3 @@ text {
     margin-bottom: 32rpx;
 }
 
-.sign-bottom{
-    width: 600rpx;
-    height: 230rpx;
-    margin-top: 18rpx;
-    margin-bottom: 28rpx;
-}

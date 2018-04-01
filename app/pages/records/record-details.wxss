@@ -1,0 +1,36 @@
+@import 'record-details-template/record-details-template.wxss';
+
+.gap {
+    background-color: #f0f0f0;
+}
+
+.search {
+    background-color: #f2f2f2;
+    height: 80rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+icon {
+    margin: auto 0 auto 20rpx;
+}
+
+.search input {
+    height: 100%;
+    width: 600rpx;
+    margin-left: 20rpx;
+    font-size: 20rpx;
+}
+
+.placeholder {
+    font-size: 28rpx;
+    color: #d1d1d1;
+    margin-left: 20rpx;
+}
+
+.container {
+    position: absolute;
+    top: 60rpx;
+    width: 100%;
+}
