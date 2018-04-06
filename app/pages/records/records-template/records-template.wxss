@@ -1,0 +1,103 @@
+.content {
+    margin: 40rpx;
+    margin-bottom: 20rpx;
+    width: 90%;
+    border: 7rpx solid #2780d6;
+}
+
+.record {
+    height: 60rpx;
+    line-height: 60rpx;
+    margin: 15rpx 12rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.record-top {
+    height: 70rpx;
+    margin: 15rpx 12rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.record-bottom {
+    height: 70rpx;
+    margin: 23rpx 12rpx;
+    margin-top: -20rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-top {
+    margin-left: 110rpx;
+    margin-top: 40rpx;
+}
+
+.record-box {
+    height:60rpx;
+    line-height: 60rpx;
+    margin: 15rpx 60rpx;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+
+.gap {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 40rpx;
+}
+
+.gap-center {
+    width: 100%;
+    background-color: #2780d6;
+    height: 40rpx;
+}
+
+.text-margin-right {
+    margin-right: 20rpx;
+}
+
+.triangle {
+    position: relative;
+    width: 0rpx;
+    height: 0rpx;
+    border-top: 80rpx solid #2780d6;
+    border-right: 80rpx solid transparent;
+}
+
+.triangle2 {
+    transform: rotate(90deg);
+    margin-left: 21rpx;
+}
+
+.triangle3 {
+    transform: rotate(270deg);
+}
+
+.triangle4 {
+    transform: rotate(180deg);
+    margin-left: 492rpx;
+}
+
+.obliqueLine {
+    width: 30rpx;
+    border-right: 2rpx solid #2780d6;
+    transform: rotate(45deg);
+    margin-right: 15rpx;
+}
+
+.team-name {
+    margin-left: 35rpx;
+    margin-right: 32rpx;
+    line-height: 55px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 12rpx;
+}

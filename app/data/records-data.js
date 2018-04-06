@@ -1,7 +1,7 @@
 var local_database = [
     {
-        person_one: "物价先",
-        person_two: "正文开",
+        person_one: "小红",
+        person_two: "小花",
         team_name: "华农酸奶",
         team_state: "到场2",
         score: "7.5",
@@ -18,8 +18,8 @@ var local_database = [
         rule_9: "0",
     },
     {
-        person_one: "物价先",
-        person_two: "正文开",
+        person_one: "小红",
+        person_two: "小花",
         team_name: "华农酸奶",
         team_state: "到场2",
         score: "7.5",
@@ -36,8 +36,8 @@ var local_database = [
         rule_9: "0",
     },
     {
-        person_one: "物价先",
-        person_two: "正文开",
+        person_one: "小红",
+        person_two: "小花",
         team_name: "华农酸奶",
         team_state: "到场2",
         score: "7.5",
@@ -54,8 +54,8 @@ var local_database = [
         rule_9: "0",
     },
     {
-        person_one: "物价先",
-        person_two: "正文开",
+        person_one: "小红",
+        person_two: "小花",
         team_name: "华农酸奶",
         team_state: "到场2",
         score: "7.5",

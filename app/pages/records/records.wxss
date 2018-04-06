@@ -1,4 +1,4 @@
-@import 'record-details-template/record-details-template.wxss';
+@import 'records-template/records-template.wxss';
 
 .gap {
     background-color: #f0f0f0;

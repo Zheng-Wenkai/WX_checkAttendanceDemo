@@ -6,7 +6,7 @@ Page({
     },
     onCancelImgTap: function (event) {
         this.setData({
-            searchPanelShow: false
+            searchPanelShow: false,
         })
     },
     onBindFoucs: function (event) {

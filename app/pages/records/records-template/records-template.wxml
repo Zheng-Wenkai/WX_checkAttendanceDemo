@@ -1,0 +1,85 @@
+<template name='records-template'>
+    <view class='content'>
+        <view class='record-top'>
+            <view class='triangle triangle1'></view>
+            <view class='obliqueLine'></view>
+            <view class='obliqueLine'></view>
+            <view class='obliqueLine'></view>
+            <text class='team-name'>{{team_name}}</text>
+            <view class='obliqueLine'></view>
+            <view class='obliqueLine'></view>
+            <view class='obliqueLine'></view>
+            <view class='triangle triangle2'></view>
+        </view>
+
+        <view class='box-top'>
+            <view class='record'>
+                <image src='/image/clock.jpg'></image>
+                <text>检查时间：</text>
+                <text class='text-margin-right'>{{date}}</text>
+                <text>{{time}}</text>
+            </view>
+            <view class='record'>
+                <image src='/image/member.jpg'></image>
+                <text>到场人数：</text>
+                <text>{{team_state}}</text>
+            </view>
+            <view class='record'>
+                <image src='/image/checker.jpg'></image>
+                <text>考勤人员1：</text>
+                <text class='text-margin-right'>{{person_one}}</text>
+                <text>{{person_two}}</text>
+            </view>
+            <view class='record'>
+                <image src='/image/star.jpg'></image>
+                <text>最终得分：</text>
+                <text>{{score}}</text>
+            </view>
+        </view>
+
+        <view class='gap-center'></view>
+
+        <view class='record-box'>
+            <text>①地面是否有纸屑、包装等垃圾：</text>
+            <text>{{rule_1}}</text>
+        </view>
+        <view class='record-box'>
+            <text>②地面是否有污渍：</text>
+            <text>{{rule_2}}</text>
+        </view>
+        <view class='record-box'>
+            <text>③桌面是否有纸屑、包装等垃圾：</text>
+            <text>{{rule_3}}</text>
+        </view>
+        <view class='record-box'>
+            <text>④桌面物品是否摆放杂乱：</text>
+            <text>{{rule_4}}</text>
+        </view>
+        <view class='record-box'>
+            <text>⑤椅子及其他设施是否摆放杂乱：</text>
+            <text>{{rule_5}}</text>
+        </view>
+        <view class='record-box'>
+            <text>⑥是否有团队物品放置在公共区域：</text>
+            <text>{{rule_6}}</text>
+        </view>
+        <view class='record-box'>
+            <text>⑦是否在创客空间内大声喧哗：</text>
+            <text>{{rule_7}}</text>
+        </view>
+        <view class='record-box'>
+            <text>⑧是否对卫生问题不重视，态度敷衍：</text>
+            <text>{{rule_8}}</text>
+        </view>
+        <view class='record-box'>
+            <text>⑨是否对考勤人员态度恶劣：</text>
+            <text>{{rule_9}}</text>
+        </view>
+
+        <view class='record-bottom'>
+            <view class='triangle triangle3'></view>
+            <view class='triangle triangle4'></view>
+        </view>
+    </view>
+    <view class='gap'></view>
+</template>
