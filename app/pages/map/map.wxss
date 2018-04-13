@@ -1,9 +1,182 @@
-/* pages/map/map.wxss */
+text {
+    display: block;
+    text-align: center;
+    line-height: 70rpx;
+    color: snow;
+}
 
-image {
-    width: 600rpx;
-    height: 1050rpx;
-    margin: 75rpx;
-    border-radius: 20rpx;
-    box-shadow: 0px 0px 12rpx 0px #19171a;
+.team {
+    width: 146rpx;
+    height: 140rpx;
+    transform: rotate(90deg);
+    border-radius: 16rpx;
+    margin: 8rpx 4rpx;
+    box-shadow: 0rpx 0rpx 6rpx 0rpx rgba(170, 170, 170, 1);
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-center {
+    margin-top: 15rpx;
+}
+
+.color-red {
+    background-color: #fa7886;
+}
+
+.color-yellow {
+    background-color: #fcdc36;
+}
+
+.color-green {
+    background-color: #38d3a9;
+}
+
+.color-blue {
+    background-color: #64baff;
+}
+
+.color-indigo {
+    background-color: #34ced9;
+}
+
+.color-purple {
+    background-color: #a788d3;
+}
+
+.color-grey {
+    background-color: #c7c7c7;
+}
+
+
+
+.content-left {
+    width: 1500rpx;
+    height: 120rpx;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -690rpx;
+    top: 691rpx;
+}
+
+.content-left .view1 {
+    display: block;
+    line-height: 120rpx;
+    height: 120rpx;
+    width: 350rpx;
+}
+
+.content-left .view2 {
+    display: block;
+    line-height: 120rpx;
+    height: 120rpx;
+    width: 300rpx;
+    position: relative;
+    left: 700rpx;
+}
+
+.content-left .view3 {
+    height: 120rpx;
+    width: 300rpx;
+    position: relative;
+    left: 700rpx;
+    line-height: 60rpx;
+}
+
+.content-bottom {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 367rpx;
+    top: 1285rpx;
+}
+
+.content-bottom .view1 {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.content-bottom .view2 {
+    width: 150rpx;
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-bottom .view3 {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.content-bottom .view4, .view5 {
+    width: 76rpx;
+    height: 150rpx;
+}
+
+.content-bottom .view7 {
+    width: 150rpx;
+    height: 100rpx;
+    margin-bottom: 30rpx;
+    line-height: 100rpx;
+}
+
+.content-bottom .textThree {
+    line-height: 50rpx;
+}
+
+.content-bottom .textTow {
+    line-height: 75rpx;
+}
+
+.content-top {
+    transform: rotate(90deg);
+    margin-top: -285rpx;
+    margin-bottom: -280rpx;
+    margin-left: 120rpx;
+}
+
+.content-top .view1 {
+    width: 70rpx;
+    height: 316rpx;
+    line-height: 156rpx;
+    text-align: center;
+    color:snow;
+}
+
+.content-top .view2 {
+    width: 70rpx;
+    height: 316rpx;
+    line-height: 104rpx;
+    text-align: center;
+    color:snow;
+}
+
+.content-right {
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 789rpx;
+    left: 60rpx;
+}
+
+.content-right .WC {
+    width: 180rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    margin-right: 180rpx;
+}
+
+.content-right .view {
+    width: 180rpx;
+    height: 120rpx;
+}
+
+.content-right .right-text {
+    line-height: 60rpx;
 }
