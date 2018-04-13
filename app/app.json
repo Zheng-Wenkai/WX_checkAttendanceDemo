@@ -1,17 +1,18 @@
 {
-  "pages": [
-    "pages/login/login",
-    "pages/rules/rules",
-    "pages/standard/standard",
-    "pages/feedback/feedback",
-    "pages/check/check",
-    "pages/index/index",
-    "pages/sign/sign",
-    "pages/map/map"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle": "black"
-  }
+    "pages": [
+        "pages/login/login",
+        "pages/map/map",
+        "pages/records/records",
+        "pages/index/index",
+        "pages/check/check",
+        "pages/rules/rules",
+        "pages/standard/standard",
+        "pages/feedback/feedback",
+        "pages/sign/sign"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    }
 }
