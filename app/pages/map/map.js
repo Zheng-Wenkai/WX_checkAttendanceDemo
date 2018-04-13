@@ -7,7 +7,6 @@ Page({
         for (var i = 0, k = 0; i < 9; i++) {
             position.push([maps_key[k++], maps_key[k++], maps_key[k++]])
         }
-        console.log(maps_key);
         this.setData({
             map_key: position,
             maps_key: maps_key
