@@ -67,5 +67,22 @@ module.exports={
             );
         console.log(advice);
         return ctx.response.body = ctx.request.body;
-    }
+    },
+    searchRecords: function (req, res, next) {
+        console.log(req.query);
+
+        if(req.query.rangeType=='A'){
+            Sign.findOne({"range": parseInt(req.query.rangeNum)}, function (err, data) {
+                if (err) return next(err);
+                return res.json(data);
+            });
+        }
+        else if(req.query.rangeType=='B'){
+            Sign2.findOne({"range": parseInt(req.query.rangeNum)}, function (err, data) {
+                if (err) return next(err);
+                return res.json(data);
+            });
+        }
+        else return console.log("排队类型错误");
+    },
 };
