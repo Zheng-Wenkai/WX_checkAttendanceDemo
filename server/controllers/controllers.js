@@ -1,14 +1,14 @@
-const config=require('../config');
+const config = require('../config');
 // 连接数据库
 const knex = require('knex')(config.db);
-module.exports={
-    hello:async (ctx, next) => {
+module.exports = {
+    hello: async (ctx, next) => {
         return ctx.response.body = 'Hello world';
     },
-    sinsert:async (ctx, next) => {
+    sinsert: async (ctx, next) => {
         // ctx是对应koa的，res是对应knex的
         //console.log(ctx.request.body);
-        let mydate=new Date();
+        let mydate = new Date();
         let information = {
             person_one: ctx.request.body.person_one,
             person_two: ctx.request.body.person_two,
@@ -25,33 +25,23 @@ module.exports={
             rule_9: -parseFloat(ctx.request.body.rule_9),
             date: mydate.toLocaleDateString(),
             time: mydate.toLocaleTimeString(),
-            score: 10-(parseFloat(ctx.request.body.rule_1)+parseFloat(ctx.request.body.rule_2)+parseFloat(ctx.request.body.rule_3)+
-                parseFloat(ctx.request.body.rule_4)+parseFloat(ctx.request.body.rule_5)+parseFloat(ctx.request.body.rule_6)+
-                parseFloat(ctx.request.body.rule_7)+parseFloat(ctx.request.body.rule_8)+parseFloat(ctx.request.body.rule_9)),
+            score: 10 - (parseFloat(ctx.request.body.rule_1) + parseFloat(ctx.request.body.rule_2) + parseFloat(ctx.request.body.rule_3) +
+                parseFloat(ctx.request.body.rule_4) + parseFloat(ctx.request.body.rule_5) + parseFloat(ctx.request.body.rule_6) +
+                parseFloat(ctx.request.body.rule_7) + parseFloat(ctx.request.body.rule_8) + parseFloat(ctx.request.body.rule_9)),
         };
         await knex(config.sdbName).insert(information)
-            .catch(function(e) {
+            .catch(function (e) {
                 console.error(e);
             })
             .then(
                 console.log("sign columns insert success")
             );
         console.log(information);
-        return ctx.response.body=ctx.request.body;
+        return ctx.response.body = ctx.request.body;
     },
-    // selectAll:async (ctx, next) => {
-    //     let data=null;
-    //     await knex.select().table(config.sdbName)
-    //         .then(function (res) {
-    //             data=res;
-    //         })
-    //         .catch(function(e) {
-    //             console.error(e);
-    //         });
-    //     return ctx.response.body=data;
-    // },
-    finsert:async (ctx, next) => {
+    finsert: async (ctx, next) => {
         // ctx是对应koa的，res是对应knex的
+        console.log(ctx.request.body);
         let advice = {
             team_name: ctx.request.body.team_name,
             advice1: ctx.request.body.advice1,
@@ -68,21 +58,19 @@ module.exports={
         console.log(advice);
         return ctx.response.body = ctx.request.body;
     },
-    searchRecords: function (req, res, next) {
-        console.log(req.query);
-
-        if(req.query.rangeType=='A'){
-            Sign.findOne({"range": parseInt(req.query.rangeNum)}, function (err, data) {
-                if (err) return next(err);
-                return res.json(data);
-            });
-        }
-        else if(req.query.rangeType=='B'){
-            Sign2.findOne({"range": parseInt(req.query.rangeNum)}, function (err, data) {
-                if (err) return next(err);
-                return res.json(data);
-            });
-        }
-        else return console.log("排队类型错误");
-    },
+    searchRecords: async (ctx, next) => {
+        console.log(ctx.request.query.dateInfo);
+        await knex(config.sdbName).where({date: ctx.request.query.dateInfo}).select()
+            .catch(function (e) {
+                console.error(e);
+            })
+            .then(
+                function (data) {
+                    console.log(data);
+                    ctx.response.body=data;
+                    console.log("searchRecords by dateInfo success")
+                }
+            );
+        return ctx.response.body
+    }
 };

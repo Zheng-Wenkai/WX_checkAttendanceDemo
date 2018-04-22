@@ -22,7 +22,7 @@
         <text class='help' hover-class='help-hover' bindtap='getHelp'>帮助</text>
         <view class='content'>
             <text class='text-30'>团队名称：</text>
-            <text class='Team-name'>{{teamName}}</text>
+            <text class='Team-name'>{{team_name}}</text>
             <!-- <input class='Team-name-input' name="team_name" /> -->
         </view>
 

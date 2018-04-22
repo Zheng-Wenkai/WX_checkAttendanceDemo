@@ -1,27 +1,56 @@
 var recordsData = require('../../data/records-data.js')
+const util = require('../../utils/util');
 
 Page({
-    data: {
-        searchPanelShow: false
-    },
-    onCancelImgTap: function (event) {
-        this.setData({
-            searchPanelShow: false,
-        })
-    },
-    onBindFoucs: function (event) {
-        this.setData({
-            searchPanelShow: true
-        })
-    },
-    onBindconfirm: function (event) {
-        var text = event.detail.value;
-        console.log(text);
-        // var searchUrl = ?=" + text;
-        //传输给服务器的搜索框文本
-        this.setData({
-            records_key: recordsData.recordsList
-        })
-    }
+  data: {
+    records_key: null,
+    searchPanelShow: false,
+  },
+  onCancelImgTap: function (event) {
+    this.setData({
+      searchPanelShow: false,
+    })
+  },
+  onBindFoucs: function (event) {
+    this.setData({
+      searchPanelShow: true
+    })
+  },
+  onBindconfirm: function (e) {
+    console.log(e.detail.value)
+    var that=this
+    wx.request({
+      url: 'http://127.0.0.1:5757/searchRecords',
+      data: {
+        dateInfo: e.detail.value
+      },
+      method: 'Get',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data);
+        if (res.data == '') {
+          util.showModel('获取考勤信息失败', '不存在该考勤');
+        }
+        else {
+          //传输给服务器的搜索框文本
+          that.setData({
+            records_key: res.data
+          })
+          console.log("success load");
+        }
+      },
+      fail: function (res) {
+        console.log(res);
+        util.showModel('获取考勤信息失败', '请检查网络连接是否正常');
+      },
+    })
+    // var searchUrl = ?=" + text;
+    //传输给服务器的搜索框文本
+    // this.setData({
+    //     records_key: recordsData.recordsList
+    // })
+  }
 
 })

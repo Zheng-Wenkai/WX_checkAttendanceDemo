@@ -10,7 +10,7 @@
     </view> -->
     <view class='sign'>
         <image src="/image/index3.jpg" bindtap='turnToMap'></image>
-        <text>团队地图</text>
+        <text>团队考勤</text>
     </view>
     <view class='sign'>
         <image src="/image/index4.jpg" bindtap='turnToRules'></image>

@@ -7,4 +7,5 @@ router.post('/sinsert', controllers.sinsert);
 //router.get('/selectAll', controllers.selectAll);
 // 提交长期反馈信息
 router.post('/finsert',controllers.finsert);
+router.get('/searchRecords',controllers.searchRecords)
 module.exports=router;
