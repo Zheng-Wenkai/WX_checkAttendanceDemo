@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/records/records",
     "pages/map/map",
     "pages/feedback/feedback",
-    "pages/login/login",
     "pages/check/check",
     "pages/rules/rules",
     "pages/standard/standard",
