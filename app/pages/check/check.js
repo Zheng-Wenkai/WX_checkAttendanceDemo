@@ -28,7 +28,7 @@ Page({
   onLoad: function (options) {
     var mapId = options.id;
     this.setData({
-        teamName: mapData.mapList[mapId].teamName
+      team_name: mapData.mapList[mapId].teamName
     })
 
   },
@@ -70,9 +70,10 @@ Page({
   //   })
   // },
   formSubmit: function (e) {
+    var that=this
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     console.log(e.detail.value.team_state + e.detail.value.present_num)
-    if (e.detail.value.team_name == "" || e.detail.value.team_state == "" || e.detail.value.rule_1 == "" || e.detail.value.rule_2 == "" || e.detail.value.rule_3 == "" || e.detail.value.rule_4 == "" || e.detail.value.rule_5 == "" || e.detail.value.rule_6 == "" || e.detail.value.rule_7 == "" || e.detail.value.rule_8 == "" || e.detail.value.rule_9 == "" ){
+    if (e.detail.value.team_state == "" || e.detail.value.rule_1 == "" || e.detail.value.rule_2 == "" || e.detail.value.rule_3 == "" || e.detail.value.rule_4 == "" || e.detail.value.rule_5 == "" || e.detail.value.rule_6 == "" || e.detail.value.rule_7 == "" || e.detail.value.rule_8 == "" || e.detail.value.rule_9 == "" ){
       util.showModel('无法提交','请将表单信息填写完整');
     }
     else{
@@ -82,7 +83,7 @@ Page({
         data: {
           person_one: app.globalData.person_one,
           person_two: app.globalData.person_two,
-          team_name: e.detail.value.team_name,
+          team_name: that.data.team_name,
           team_state: e.detail.value.team_state + e.detail.value.present_num,
           rule_1: e.detail.value.rule_1,
           rule_2: e.detail.value.rule_2,
@@ -101,6 +102,9 @@ Page({
         success: function (res) {
           console.log(res.data)
           util.showSuccess('提交成功');
+          wx.navigateBack({
+            
+          })
         }
       })
     }

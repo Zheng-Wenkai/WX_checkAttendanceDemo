@@ -38,7 +38,7 @@ Page({
   turnToRecords: function () {
       if (app.globalData.person_one != null || app.globalData.person_two != null) {
           wx.navigateTo({
-              url: '../records/records-details',
+              url: '../records/records',
           })
       }
       else {

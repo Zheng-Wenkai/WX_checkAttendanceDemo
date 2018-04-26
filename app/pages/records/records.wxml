@@ -1,7 +1,7 @@
 <import src='records-template/records-template.wxml' />
 <view class='search'>
     <icon type='search' size='13' color='#405f80' />
-    <input type='text' placeholder='2018/3/20' placeholder-class='placeholder' bindfocus='onBindFoucs' bindconfirm='onBindconfirm'></input>
+    <input type='text' placeholder='日期格式如：2018-3-20' placeholder-class='placeholder' bindfocus='onBindFoucs' bindconfirm='onBindconfirm'></input>
     <icon wx:if="{{searchPanelShow}}" type='clear' size='15' bindtap='onCancelImgTap' />
 </view>
 
