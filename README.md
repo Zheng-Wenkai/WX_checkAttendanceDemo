@@ -25,7 +25,6 @@
 2、后端部署在本地，用户无需将其部署在服务器中，仅需打开server文件夹，并启动其中的app.js，地址即为app文件夹中的http://localhost:5757/
 
 # 需求分析
-
 ![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/analyse.png)
 
 # UI设计
