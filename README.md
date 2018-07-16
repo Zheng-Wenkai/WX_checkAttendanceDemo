@@ -59,6 +59,11 @@
 
 ![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/standard.png)
 
+### 历史搜索：
+
+![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/search1.png)
+
+![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/search2.png)
 
 ### 长期反馈：
 
