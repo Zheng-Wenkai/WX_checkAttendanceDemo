@@ -49,7 +49,7 @@
 
 ### 地图：
 
-由于考虑到隐私问题，故不显示该页面。用户可在demo中替换成自己需要的图片。
+![image](https://github.com/Zheng-Wenkai/WX_checkAttendanceDemo/blob/master/imageToIntroduce/map.png)
 
 ### 人员制度：
 
