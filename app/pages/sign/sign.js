@@ -79,10 +79,10 @@ Page({
     if (this.data.person_one != null || this.data.person_two != null) {
       app.globalData.person_one = this.data.person_one;
       app.globalData.person_two = this.data.person_two;
-      util.showSuccess('签到成功');
       wx.navigateBack({
         delta: 1
       })
+      util.showSuccess('签到成功');
     }
     else {
       util.showModel('签到失败','考勤人员不能为空');

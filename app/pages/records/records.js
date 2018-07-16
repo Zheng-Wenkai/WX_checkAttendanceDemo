@@ -1,6 +1,6 @@
-var recordsData = require('../../data/records-data.js')
+// var recordsData = require('../../data/records-data.js')
 const util = require('../../utils/util');
-
+const config = require('../../config.js');
 Page({
   data: {
     records_key: null,
@@ -20,7 +20,7 @@ Page({
     console.log(e.detail.value)
     var that=this
     wx.request({
-      url: 'http://127.0.0.1:5757/searchRecords',
+      url: config.service.searchUrl,
       data: {
         dateInfo: e.detail.value
       },
@@ -38,7 +38,6 @@ Page({
           that.setData({
             records_key: res.data
           })
-          console.log("success load");
         }
       },
       fail: function (res) {

@@ -1,3 +1,5 @@
+const config = require('../../config.js');
+const util = require('../../utils/util');
 Page({
 
   /**
@@ -68,7 +70,7 @@ Page({
   fHandin: function () {
     var that = this;
     wx.request({
-      url: 'http://127.0.0.1:5757/finsert',
+      url: config.service.feedbackUrl,
       data: {
         team_name: that.data.team_name,
         advice1: that.data.advice1,
@@ -81,6 +83,10 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
+        util.showSuccess('提交成功');
+      },
+      fail: function (res) {
+        util.showModel('提交失败', '请检查你的网络连接是否正确');
       }
     })
   },

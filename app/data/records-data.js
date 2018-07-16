@@ -1,3 +1,4 @@
+// 搜索页的测试数据
 var local_database = [
     {
         person_one: "小红",

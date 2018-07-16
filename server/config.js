@@ -10,7 +10,8 @@ const CONF={
             database : 'xiangmubu'
         }
     },
-    sdbName:'signModel',
-    fdbName:'feedbackModel'
+    cdbName:'checkModel',
+    fdbName:'feedbackModel',
+    mdbName:'mapinfoModel'
 };
 module.exports=CONF;

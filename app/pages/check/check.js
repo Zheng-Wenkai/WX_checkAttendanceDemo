@@ -1,6 +1,6 @@
-var mapData = require('../../data/map-data.js');
 const app = getApp();
 const util = require('../../utils/util');
+const config = require('../../config.js');
 Page({
 
   /**
@@ -27,8 +27,21 @@ Page({
    */
   onLoad: function (options) {
     var mapId = options.id;
-    this.setData({
-      team_name: mapData.mapList[mapId].teamName
+    var that = this;//要在request里修改数据只能用that，且that的结果不会影响到this，但wxml中的data是最后一次修改的结果
+    wx.request({
+      url: config.service.mapUrl,
+      method: 'Get',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        that.setData({
+          team_name: res.data[mapId].teamName
+        })
+      },
+      fail: function (res) {
+        console.log(res);
+      },
     })
 
   },
@@ -79,7 +92,7 @@ Page({
     else{
       util.showBusy('正在提交');
       wx.request({
-        url: 'http://127.0.0.1:5757/sinsert',
+        url: config.service.checkUrl,
         data: {
           person_one: app.globalData.person_one,
           person_two: app.globalData.person_two,
@@ -101,10 +114,13 @@ Page({
         },
         success: function (res) {
           console.log(res.data)
-          util.showSuccess('提交成功');
           wx.navigateBack({
             
           })
+          util.showSuccess('提交成功');
+        },
+        fail:function(res){
+          util.showModel('提交失败', '请检查你的网络连接是否正确');
         }
       })
     }

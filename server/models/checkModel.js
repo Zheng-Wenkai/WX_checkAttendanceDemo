@@ -3,7 +3,7 @@ module.exports=async (ctx, next) => {
     // 连接数据库
     const knex = require('knex')(config.db);
     // 定义和创建数据表
-    await knex.schema.createTableIfNotExists(config.sdbName, function (table) {
+    await knex.schema.createTableIfNotExists(config.cdbName, function (table) {
         table.string('person_one');
         table.string('person_two');
         table.string('team_name');
@@ -22,7 +22,7 @@ module.exports=async (ctx, next) => {
         table.string('time');
     })
         .then(function(res) {
-            console.log("build sign model success");
+            console.log("build check model success");
         })
         .catch(function(e) {
         console.error(e);

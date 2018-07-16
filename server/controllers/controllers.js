@@ -2,12 +2,13 @@ const config = require('../config');
 // 连接数据库
 const knex = require('knex')(config.db);
 module.exports = {
+    // 供测试使用
     hello: async (ctx, next) => {
         return ctx.response.body = 'Hello world';
     },
-    sinsert: async (ctx, next) => {
+    // 提交考勤信息
+    cinsert: async (ctx, next) => {
         // ctx是对应koa的，res是对应knex的
-        //console.log(ctx.request.body);
         let mydate = new Date();
         let information = {
             person_one: ctx.request.body.person_one,
@@ -29,7 +30,7 @@ module.exports = {
                 parseFloat(ctx.request.body.rule_4) + parseFloat(ctx.request.body.rule_5) + parseFloat(ctx.request.body.rule_6) +
                 parseFloat(ctx.request.body.rule_7) + parseFloat(ctx.request.body.rule_8) + parseFloat(ctx.request.body.rule_9)),
         };
-        await knex(config.sdbName).insert(information)
+        await knex(config.cdbName).insert(information)
             .catch(function (e) {
                 console.error(e);
             })
@@ -39,6 +40,7 @@ module.exports = {
         console.log(information);
         return ctx.response.body = ctx.request.body;
     },
+    // 提交反馈信息
     finsert: async (ctx, next) => {
         // ctx是对应koa的，res是对应knex的
         console.log(ctx.request.body);
@@ -58,9 +60,25 @@ module.exports = {
         console.log(advice);
         return ctx.response.body = ctx.request.body;
     },
+    // 查询考勤记录
     searchRecords: async (ctx, next) => {
         console.log(ctx.request.query.dateInfo);
-        await knex(config.sdbName).where({date: ctx.request.query.dateInfo}).select()
+        await knex(config.cdbName).where({date: ctx.request.query.dateInfo}).select()
+            .catch(function (e) {
+                console.error(e);
+            })
+            .then(
+                function (data) {
+                    console.log(data);
+                    ctx.response.body=data;
+                    console.log("searchRecords by dateInfo success")
+                }
+            );
+        return ctx.response.body
+    },
+    // 获取地图信息
+    getMapInfo: async (ctx, next) => {
+        await knex(config.mdbName).where({}).select()
             .catch(function (e) {
                 console.error(e);
             })
