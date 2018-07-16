@@ -22,6 +22,6 @@
     </view>
     <view class='sign'>
         <image src="/image/index2.jpg" bindtap='turnToRecords'></image>
-        <text>历史记录</text>
+        <text>历史查询</text>
     </view>
 </view>
